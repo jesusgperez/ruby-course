@@ -16,3 +16,5 @@ else
 end
 
 puts response
+
+puts user == 'jesus' ? 'tutor' : 'estudiante'
