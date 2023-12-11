@@ -12,4 +12,3 @@ greet()
 
 puts square(3)
 puts square('jje')
-
