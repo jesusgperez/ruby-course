@@ -20,7 +20,6 @@ end
 
 videos = [Vimeo.new, YouTube.new, Video.new, Vimeo.new, Video.new, YouTube.new]
 
-
 videos.each do |video|
     video.play
 end
