@@ -23,3 +23,21 @@ names = ["Jesus", "Gabriel", "Perez", "Siculaba"]
 names.each_with_index do |name, index| 
     puts "#{name} - #{index}"
 end
+
+
+# Yield uses a block passed by a block as parameter
+def hello
+    yield if block_given?
+end
+
+def another_hello &block
+    block.call
+end
+
+hello {puts "Hello world"}
+hello()
+
+another_hello do
+    puts "This is another block"
+end
+
